@@ -9,7 +9,7 @@ describe('color', function() {
 });
 
 // number of tests to generate
-var GEN = 4000;
+var GEN = 7000;
 // toggle stdout on or off
 var OUT = true;
 // width of characters to write
@@ -44,7 +44,7 @@ function print(raw, fmtd) {
   write(48);
   write(38);
   function write(ln) {
-    lines += '\033['+ln+';5;'+ansi+'m'+out.slice(0, WIDTH)+'\033[0m ';
+    lines += '\033['+ln+';5;'+ansi+'m'+out.slice(0, WIDTH)+'\033[0m';
   }
   if (OUT) process.stdout.write(lines);
   return lines;
