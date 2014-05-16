@@ -1,5 +1,6 @@
 
 test:
-	@mocha --require should
+	@./node_modules/.bin/mocha \
+		--bail
 
 .PHONY: test

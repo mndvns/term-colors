@@ -10,6 +10,12 @@
   "license": "MIT",
   "dependencies": {
     "color-parser": "~0.1.0",
-    "color": "~0.5.0"
+    "color": "~0.5.0",
+    "type-component": "0.0.1"
+  },
+  "devDependencies": {
+    "should": "^3.3.1",
+    "batch": "^0.5.0",
+    "mocha": "*"
   }
 }
